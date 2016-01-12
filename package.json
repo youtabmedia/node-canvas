@@ -21,7 +21,7 @@
   "homepage": "https://github.com/Automattic/node-canvas",
   "repository": "git://github.com/Automattic/node-canvas.git",
   "scripts": {
-    "prebenchmark": "node-gyp build",
+    "prebenchmark": "nw-gyp configure --target=0.12.3; nw-gyp rebuild",
     "benchmark": "node benchmarks/run.js",
     "pretest": "nw-gyp configure --target=0.12.3; nw-gyp rebuild",
     "test": "mocha test/*.test.js",
