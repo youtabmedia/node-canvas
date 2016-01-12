@@ -21,13 +21,13 @@
   "homepage": "https://github.com/Automattic/node-canvas",
   "repository": "git://github.com/Automattic/node-canvas.git",
   "scripts": {
-    "prebenchmark": "nw-gyp configure --target=0.12.3; nw-gyp rebuild",
+    "prebenchmark": "nw-gyp configure --target=0.12.3; nw-gyp build",
     "benchmark": "node benchmarks/run.js",
-    "pretest": "nw-gyp configure --target=0.12.3; nw-gyp rebuild",
+    "pretest": "nw-gyp configure --target=0.12.3; nw-gyp build",
     "test": "mocha test/*.test.js",
-    "pretest-server": "nw-gyp configure --target=0.12.3; nw-gyp rebuild",
+    "pretest-server": "nw-gyp configure --target=0.12.3; nw-gyp build",
     "test-server": "node test/server.js",
-    "install": "nw-gyp configure --target=0.12.3; nw-gyp rebuild"
+    "install": "nw-gyp configure --target=0.12.3; nw-gyp build"
   },
   "dependencies": {
     "nan": "^2.1.0"
