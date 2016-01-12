@@ -26,7 +26,8 @@
     "pretest": "nw-gyp configure --target=0.12.3; nw-gyp rebuild",
     "test": "mocha test/*.test.js",
     "pretest-server": "nw-gyp configure --target=0.12.3; nw-gyp rebuild",
-    "test-server": "node test/server.js"
+    "test-server": "node test/server.js",
+    "install": "nw-gyp configure --target=0.12.3; nw-gyp rebuild"
   },
   "dependencies": {
     "nan": "^2.1.0"
