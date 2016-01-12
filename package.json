@@ -23,9 +23,9 @@
   "scripts": {
     "prebenchmark": "node-gyp build",
     "benchmark": "node benchmarks/run.js",
-    "pretest": "node-gyp build",
+    "pretest": "nw-gyp configure --target=0.12.3; nw-gyp rebuild",
     "test": "mocha test/*.test.js",
-    "pretest-server": "node-gyp build",
+    "pretest-server": "nw-gyp configure --target=0.12.3; nw-gyp rebuild",
     "test-server": "node test/server.js"
   },
   "dependencies": {
