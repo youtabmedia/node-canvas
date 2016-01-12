@@ -38,7 +38,7 @@
     "mocha": "*"
   },
   "engines": {
-    "node": ">=0.8.0"
+    "nw.js": "0.12.3"
   },
   "main": "./lib/canvas.js",
   "license": "MIT"
